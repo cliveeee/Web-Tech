@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/195692ab2d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<header>
+  <nav class="nav-bar">
 
+
+    <a href="#" class="nav-branding">CLIVE </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+      <li class="nav-item"><a class="nav-link"  href="contact.html" >Contact</a></li>
+      <li class="nav-item"><a class="nav-link"  href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link"  href="resume.html">Resume</a></li>
+      <li class="nav-item"><a class="nav-link"  href="projects.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link"  href="my-work.html">My Work</a></li>
+    </ul>
+
+    <div class="hamburger" >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+
+    </div>
+
+  </nav>
+
+</header>
+<script src="/assets/js/main.js"></script>
+
+<main class="container">
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/img/clive.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Clive Chipunzi</h1>
+      <p class="section__text__p2">FullStack Developer</p>
+      <div class="btn-container">
+        <button
+                class="btn btn-color-2"
+                onclick="window.open('resume.html')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./contact.html'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+
+        <a href="https://github.com/cliveeee"><i class="fa-brands fa-github icon"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer >
+  <div class="footer-content">
+    <img src="/assets/img/logo.png" alt="Logo">
+
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/clive-tendai-chipunzi-378616227/"><i class="fa-brands fa-linkedin"></i></a> </li>
+      <li><a href="https://twitter.com/i_am_mcsaint"><i class="fa-brands fa-twitter"></i></a> </li>
+      <li><a href="https://www.instagram.com/i_am_mcsaint"><i class="fa-brands fa-instagram"></i></a> </li>
+      <li><a href="https://github.com/cliveeee"><i class="fa-brands fa-github"></i></a> </li>
+    </ul>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>&copy; Copyright 2023 Clive Chipunzi. All rights reserved.</p>
+  </div>
+
+
+</footer>
 </body>
 </html>

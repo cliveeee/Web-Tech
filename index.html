@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clive Chipunzi - Home</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/195692ab2d.js" crossorigin="anonymous"></script>
 </head>
+<body>
+<header>
+    <nav class="nav-bar">
 
-<body class="font-sans bg-gray-100 min-h-screen flex flex-col">
 
-<!-- Navigation -->
-<div class="nav-container">
-    <div>
-        <h1>Clive Chipunzi</h1>
-    </div>
-    <button id="menu-toggle">&#9776;</button>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="my-work.html">My Work</a></li>
+        <a href="#" class="nav-branding">CLIVE </a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+            <li class="nav-item"><a class="nav-link"  href="contact.html" >Contact</a></li>
+            <li class="nav-item"><a class="nav-link"  href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link"  href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link"  href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link"  href="my-work.html">My Work</a></li>
         </ul>
+
+        <div class="hamburger" >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
     </nav>
-</div>
+
+</header>
+<script src="/assets/js/main.js"></script>
 
 <!-- Main Content -->
 <main>
-    <section class="welcome">
+    <section class="section-welcome">
         <h2>Welcome to My Website!</h2>
         <p>Hello, I'm Clive Chipunzi, a student currently studying Cert IV Information Technology (Programming). This is my personal website where I showcase my projects and share my experiences in the world of programming and technology.</p>
     </section>
 
-    <section class="grid">
-        <div>
+    <section class="card-grid">
+        <div class="custom-card">
             <h3>What I Offer</h3>
             <p>I offer a range of skills and expertise in web development, programming, and technology. Whether you need a website, have a programming challenge, or want to explore the latest technologies, I'm here to help!</p>
         </div>
 
-        <div>
+        <div class="custom-card">
             <h3>Latest Projects</h3>
             <p>Explore my latest projects where I apply my knowledge and skills to create innovative solutions. From web applications to programming experiments, each project reflects my passion for technology.</p>
         </div>
 
-        <div>
+        <div class="custom-card">
             <h3>Join My Community</h3>
             <p>Connect with me and others in the technology community. Share ideas, collaborate on projects, and stay updated on the latest trends. Let's learn and grow together!</p>
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="section-about">
         <h2>More About Me</h2>
         <p>Outside the world of technology, I enjoy exploring new hobbies, reading books, and staying active. Feel free to explore the various sections of my website to learn more about my journey and interests.</p>
     </section>
 </main>
 
+
 <!-- Footer -->
-<footer>
-    <img src="https://placehold.co/64?text=logo" alt="Logo">
-    <div class="copyright">
+<footer >
+    <div class="footer-content">
+        <img src="/assets/img/logo.png" alt="Logo">
+
+        <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/clive-tendai-chipunzi-378616227/"><i class="fa-brands fa-linkedin"></i></a> </li>
+            <li><a href="https://twitter.com/i_am_mcsaint"><i class="fa-brands fa-twitter"></i></a> </li>
+            <li><a href="https://www.instagram.com/i_am_mcsaint"><i class="fa-brands fa-instagram"></i></a> </li>
+            <li><a href="https://github.com/cliveeee"><i class="fa-brands fa-github"></i></a> </li>
+        </ul>
+
+    </div>
+
+
+    <div class="footer-bottom">
         <p>&copy; Copyright 2023 Clive Chipunzi. All rights reserved.</p>
     </div>
+
+
 </footer>
-
-
 </body>
-
 </html>
