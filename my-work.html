@@ -31,24 +31,84 @@
   </nav>
 
 </header>
-
+<script src="./assets/js/main.js"></script>
 
   <main class="container">
-    <!-- Jokes Section -->
-    <section id="jokes-section" class="custom-card">
-      <h2>Jokes</h2>
+    <script src="./assets/js/main.js"></script><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <script src="https://kit.fontawesome.com/195692ab2d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
 
-      <!-- Input Area -->
-      <div class="jokes-controls">
-        <label for="numberOfJokes">Number of Jokes:</label>
-        <input type="number" id="numberOfJokes" placeholder="Enter number of jokes">
-        <button id="getJokesBtn">Get Jokes</button>
-      </div>
 
-      <!-- Display Jokes Area -->
-      <div id="jokesDisplay" class="jokes-card"></div>
-    </section>
+    <main class="container">
+      <!-- Jokes Section -->
+      <section id="jokes-section" class="custom-card">
+        <h2>Jokes</h2>
 
+        <!-- Input Area -->
+        <div class="jokes-controls">
+          <label for="numberOfJokes">Number of Jokes:</label>
+          <input type="number" id="numberOfJokes" placeholder="Enter number of jokes">
+          <button id="getJokesBtn">Get Jokes</button>
+        </div>
+
+        <!-- Display Jokes Area -->
+        <div id="jokesDisplay" class="jokes-card"></div>
+      </section>
+    </main>
+
+
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const getJokesBtn = document.getElementById("getJokesBtn");
+        const numberOfJokesInput = document.getElementById("numberOfJokes");
+        const jokesDisplay = document.getElementById("jokesDisplay");
+        const apiKey = 'BeloNZIWW2YihsrrI4KxDKmdP1JUHL8Qgc3Bg0q9';
+
+        getJokesBtn.addEventListener("click", function () {
+          const numberOfJokes = numberOfJokesInput.value;
+
+          if (numberOfJokes >= 1 && numberOfJokes <= 30) {
+            const apiUrl = `https://api.api-ninjas.com/v1/dadjokes?limit=${numberOfJokes}`;
+
+            fetch(apiUrl, {
+              method: 'GET',
+              headers: {
+                'X-Api-Key': apiKey,
+              }
+            })
+                    .then(function (response) {
+                      if (response.ok) {
+                        return response.json();
+                      } else {
+                        throw new Error(response.status);
+                      }
+                    })
+                    .then(function (data) {
+                      jokesDisplay.innerHTML = "";
+                      data.forEach(function (joke) {
+                        jokesDisplay.innerHTML += `<p>${joke.joke}</p>`;
+                      });
+                    })
+                    .catch(function (error) {
+                      console.error("Error:", error);
+                      jokesDisplay.innerHTML = "An error occurred while fetching jokes.";
+                    });
+          } else {
+            jokesDisplay.innerHTML = "Please enter a number between 1 and 30.";
+          }
+        });
+      });
+    </script>
+    </body>
+    </html>
 
   </main>
 
@@ -72,7 +132,7 @@
     <p>&copy; Copyright 2023 Clive Chipunzi. All rights reserved.</p>
   </div>
 
-  <script src="./assets/js/main.js"></script>
+
 </footer>
 </body>
 </html>
