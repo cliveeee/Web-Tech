@@ -423,6 +423,71 @@ footer{
     border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+.jokes-display {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff; /* Set card background color to white */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto; /* Center the card horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the card content vertically */
+    justify-content: center; /* Center the card content horizontally */
+}
+
+.jokes-display h2 {
+    color: #C8433A; /* Set heading color to #C8433A */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.jokes-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#numberOfJokes {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#getJokesBtn {
+    background-color: #C8433A; /* Set button background color to #C8433A */
+    color: #fff; /* Set button text color to white */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+#getJokesBtn:hover {
+    background-color: #A53731; /* Adjust hover color as needed */
+}
+
+.jokes-card {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #C8433A; /* Set content color to #C8433A */
+    background-color: #ffffff; /* Set content background color to white */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
 
 @media (max-width: 768px) {
     .hamburger {

@@ -33,29 +33,24 @@
 </header>
 <script src="./assets/js/main.js"></script>
 
-<main class="container">
-  <section id="profile">
-    <article class="section__pic-container">
-      <img src="./assets/img/clive.jpg" alt="John Doe profile picture" />
-    </article>
-    <article class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Clive Chipunzi</h1>
-      <p class="section__text__p2">FullStack Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('resume.html')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./contact.html'">
-          Contact Info
-        </button>
+  <main class="container">
+    <!-- Jokes Section -->
+    <section id="jokes-section" class="custom-card">
+      <h2>Jokes</h2>
+
+      <!-- Input Area -->
+      <div class="jokes-controls">
+        <label for="numberOfJokes">Number of Jokes:</label>
+        <input type="number" id="numberOfJokes" placeholder="Enter number of jokes">
+        <button id="getJokesBtn">Get Jokes</button>
       </div>
-      <div id="socials-container">
-        <a href="https://github.com/cliveeee"><i class="fa-brands fa-github icon"></i></a>
-      </div>
-    </article>
-  </section>
-</main>
+
+      <!-- Display Jokes Area -->
+      <div id="jokesDisplay" class="jokes-card"></div>
+    </section>
+
+
+  </main>
 
 
 <!-- Footer -->
